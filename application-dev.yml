@@ -1,3 +1,25 @@
-spring
-   appplication
-     name: 不知道
+#服务端口
+server:
+  port: 8100
+
+spring:
+  application:
+    #服务名称
+    name: guaidan-config
+  cloud:
+    config:
+      server:
+        git:
+          #git仓库地址
+          uri: https://github.com/weid8888/cloudframe-repo.git
+          search-paths: /**
+      #仓库分支
+      label: master
+      #git仓库账号
+      username: weid8888
+      #git仓库密码
+      password: aaaaa888
+
+
+
+
